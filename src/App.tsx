@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Greet name="Pope" messageCount={28} isLoggedIn={false} />
+      <Greet name="Pope" isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="error" />
