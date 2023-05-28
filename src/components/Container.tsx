@@ -1,5 +1,5 @@
 import { ContainerProps } from '../types';
 
-export const Container = (props: ContainerProps) => {
-  return <div style={props.styles}>Text content goes here</div>;
+export const Container = ({ styles }: ContainerProps) => {
+  return <div style={styles}>Text content goes here</div>;
 };

@@ -1,13 +1,13 @@
 import { StatusProps } from '../types';
 
-export const Status = (props: StatusProps) => {
+export const Status = ({ status }: StatusProps) => {
   let message;
 
-  if (props.status === 'loading') {
+  if (status === 'loading') {
     message = 'Loading...';
-  } else if (props.status === 'success') {
+  } else if (status === 'success') {
     message = 'Data Fetched Successfully!';
-  } else if (props.status === 'error') {
+  } else if (status === 'error') {
     message = 'Error Fetching Data';
   }
 

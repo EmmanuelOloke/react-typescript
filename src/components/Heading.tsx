@@ -1,5 +1,5 @@
 import { HeadingProps } from '../types';
 
-export const Heading = (props: HeadingProps) => {
-  return <h2>{props.children}</h2>;
+export const Heading = ({ children }: HeadingProps) => {
+  return <h2>{children}</h2>;
 };
