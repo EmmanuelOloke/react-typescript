@@ -25,3 +25,11 @@ export type OscarProps = {
 export type StatusProps = {
   status: 'loading' | 'success' | 'error';
 };
+
+export type ButtonProps = {
+  handleClick: (event: React.MouseEvent<HTMLButtonElement>, id: number) => void;
+};
+
+export type ContainerProps = {
+  styles: React.CSSProperties;
+};
