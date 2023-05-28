@@ -8,3 +8,7 @@ export type GreetProps = {
   messageCount?: number;
   isLoggedIn: boolean;
 };
+
+export type HeadingProps = {
+  children: string;
+};
