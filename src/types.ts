@@ -21,3 +21,7 @@ export type InputProps = {
 export type OscarProps = {
   children: React.ReactNode;
 };
+
+export type StatusProps = {
+  status: 'loading' | 'success' | 'error';
+};
