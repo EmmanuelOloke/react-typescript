@@ -9,6 +9,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { LoggedIn } from './components/state/LoggedIn';
+import { User } from './components/state/User';
 
 function App() {
   const personName = {
@@ -45,6 +46,7 @@ function App() {
       <Input value="" handleChange={(event) => console.log(event)} />
       <Container styles={{ border: '1px solid black', padding: '1rem' }} />
       <LoggedIn />
+      <User />
     </>
   );
 }
