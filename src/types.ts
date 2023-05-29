@@ -33,3 +33,8 @@ export type ButtonProps = {
 export type ContainerProps = {
   styles: React.CSSProperties;
 };
+
+export type AuthUser = {
+  name: string;
+  email: string;
+};
