@@ -1,19 +1,5 @@
 import { useReducer } from 'react';
-
-type CounterState = {
-  count: number;
-};
-
-type UpdateAction = {
-  type: 'increment' | 'decrement';
-  payload: number;
-};
-
-type ResetAction = {
-  type: 'reset';
-};
-
-type CounterAction = UpdateAction | ResetAction;
+import { CounterState, CounterAction } from '../../types';
 
 const initialState = { count: 0 };
 
