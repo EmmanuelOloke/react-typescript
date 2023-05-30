@@ -1,4 +1,6 @@
 import './App.css';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { Greet } from './components/Greet';
@@ -49,6 +51,9 @@ function App() {
       <LoggedIn />
       <User />
       <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </>
   );
 }
