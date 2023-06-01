@@ -16,6 +16,7 @@ import { User } from './components/state/User';
 import { UserContextProvider } from './components/context/UserContext';
 import { ContextUser } from './components/context/ContextUser';
 import { MutableRef } from './components/ref/MutableRef';
+import { CounterClass } from './components/class/CounterClass';
 
 function App() {
   const personName = {
@@ -63,6 +64,8 @@ function App() {
       </UserContextProvider>
 
       <MutableRef />
+
+      <CounterClass message="The count value is:" />
     </>
   );
 }
