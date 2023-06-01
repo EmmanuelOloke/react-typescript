@@ -15,6 +15,7 @@ import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
 import { UserContextProvider } from './components/context/UserContext';
 import { ContextUser } from './components/context/ContextUser';
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
   const personName = {
@@ -60,6 +61,8 @@ function App() {
       <UserContextProvider>
         <ContextUser />
       </UserContextProvider>
+
+      <MutableRef />
     </>
   );
 }
