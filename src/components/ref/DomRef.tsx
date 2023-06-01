@@ -1,10 +1,11 @@
 import { useRef, useEffect } from 'react';
 
 export const DomRef = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  const inputRef = useRef<HTMLInputElement>(null!);
 
   useEffect(() => {
-    inputRef.current?.focus();
+    inputRef.current.focus();
   }, []);
 
   return (
