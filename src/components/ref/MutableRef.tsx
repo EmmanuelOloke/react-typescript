@@ -14,6 +14,10 @@ export const MutableRef = () => {
     if (intervalRef.current) window.clearInterval(intervalRef.current);
   };
 
+  const resetTimer = () => {
+    setTimer(0);
+  };
+
   useEffect(() => {
     startTimer();
 
@@ -27,6 +31,7 @@ export const MutableRef = () => {
       <div>HookTimer - {timer} - </div>
       <button onClick={() => startTimer()}>Start Timer</button>
       <button onClick={() => stopTimer()}>Stop Timer</button>
+      <button onClick={() => resetTimer()}>Reset Timer</button>
     </div>
   );
 };
