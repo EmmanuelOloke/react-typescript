@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
 
 export const DomRef = () => {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    inputRef.current.focus();
+    inputRef.current?.focus();
   }, []);
 
   return (
