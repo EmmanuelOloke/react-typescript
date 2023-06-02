@@ -72,9 +72,9 @@ function App() {
 
       <Private isLoggedIn={true} component={Profile} />
 
-      <List items={['Sharon', 'Obianuju', 'Orekelewa']} onClick={(item) => console.log(item)} />
-      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
-      {/* <List
+      {/* <List items={['Sharon', 'Obianuju', 'Orekelewa']} onClick={(item) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List
         items={[
           {
             id: 1,
@@ -93,7 +93,7 @@ function App() {
           },
         ]}
         onClick={(item) => console.log(item)}
-      /> */}
+      />
     </>
   );
 }
