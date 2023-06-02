@@ -99,7 +99,7 @@ function App() {
 
       <RandomNumber value={5} isPositive />
 
-      <Toast position="left-center" />
+      <Toast position="center" />
     </>
   );
 }
