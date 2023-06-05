@@ -1,9 +1,5 @@
 import { useState, createContext } from 'react';
-
-export type AuthUser = {
-  name: string;
-  email: string;
-};
+import { AuthUser } from '../../types';
 
 type UserContextType = {
   user: AuthUser | null;
